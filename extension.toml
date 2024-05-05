@@ -1,0 +1,65 @@
+authors = ["d1y <chenhonzhou@gmail.com>"]
+description = "Source code spell checker for Visual Studio Code, Neovim and other LSP clients"
+id = "typos"
+name = "Typos"
+repository = "https://github.com/d1y/typos-zed"
+schema_version = 1
+version = "0.0.1"
+
+[language_servers.typos]
+name = "typos-lsp"
+language = "JavaScript"
+# ["refactor", "quickfix", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.fixAll"]
+code_actions_kind = [ "", "quickfix", "source.fixAll" ]
+languages = [
+  "TypeScript",
+  "JavaScript",
+  "Vue.js",
+  "Go",
+  "Go Mod",
+  "Go Work",
+  "Shell Script",
+  "HTML",
+  "Scheme",
+  "Lua",
+  "Dart",
+  "Zig",
+  "C",
+  "C++",
+  "CSS",
+  "JSON",
+  "Markdown",
+  "Ruby",
+  "Rust",
+  "YAML",
+  "TOML",
+
+  "Git Commit",
+  "Git Ignore"
+]
+
+[language_ids.typos]
+Dart = "dart"
+Go = "go"
+"Go Mod" = "gomod"
+"Go Work" = "gowork"
+HTML = "html"
+JavaScript = "javascript"
+Lua = "lua"
+Scheme = "scm"
+"Shell Script" = "shell"
+TypeScript = "typescript"
+"Vue.js" = "vuejs"
+Zig = "zig"
+C = "c"
+"C++" = "cpp"
+CSS = "css"
+JSON = "json"
+Markdown = "markdown"
+Python = "python"
+Ruby = "ruby"
+Rust = "rust"
+YAML = "yaml"
+TOML = "toml"
+"Git Commit" = "git_commit"
+"Git Ignore" = "git_ignore"
