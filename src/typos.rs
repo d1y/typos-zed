@@ -7,7 +7,6 @@ impl zed::Extension for TyposExtension {
     fn new() -> Self {
         Self {}
     }
-    // fo
 
     fn language_server_command(
         &mut self,
